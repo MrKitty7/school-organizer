@@ -28,5 +28,6 @@ def remove_subject(class_name, subject_name):
         if subject_name == 'all':
             for folder in os.listdir(f'./data/{class_name}/subjects'):
                 shutil.rmtree(f'./data/{class_name}/subjects/{folder}')
+                print('All subjects have been removed.')
         else:
             print(f'Subject {subject_name} does not exist.')
