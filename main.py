@@ -1,6 +1,7 @@
 import sys
 from commands.help import help_command
 from commands.create.create_class import create_class
+from commands.create.subject import create_subject
 
 # Arguments
 
@@ -13,4 +14,6 @@ if sys.argv[1] == 'help':
 if sys.argv[1] == 'create':
     if sys.argv[2] == 'class':
         create_class(sys.argv[3])
+    if sys.argv[2] == 'subject':
+        create_subject(sys.argv[3], sys.argv[4])
 #------------#

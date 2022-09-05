@@ -1,5 +1,4 @@
 import os
-import shutil
 
 def create_class(class_name):
     # Create data folder if it doesn't already exist.
@@ -14,7 +13,8 @@ def create_class(class_name):
         os.makedirs(f'./data/{class_name}')
         os.makedirs(f'./data/{class_name}/subjects')
         os.makedirs(f'./data/{class_name}/exams')
+        os.makedirs(f'./data/{class_name}/schedule')
     except:
         print('Class already exists.')
-    
+    #------------#
     print(f'Class {class_name} has been successfully created.')
