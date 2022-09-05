@@ -9,7 +9,7 @@ def help_command():
     print('add')
     print('set')
     print('edit')
-    print('change')
+    print('list')
     print('remove')
     separate()
     print('List of functions:')
