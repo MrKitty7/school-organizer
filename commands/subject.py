@@ -12,6 +12,7 @@ def create_subject(class_name, subject_name):
     try:
         os.makedirs(f'./data/{class_name}/subjects/{subject_name}')
         os.makedirs(f'./data/{class_name}/subjects/{subject_name}/lessons')
+        os.makedirs(f'./data/{class_name}/subjects/{subject_name}/exams')
     except:
         print('Subject already exists.')
     
