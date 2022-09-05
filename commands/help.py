@@ -8,7 +8,6 @@ def help_command():
     print('create')
     print('add')
     print('set')
-    print('edit')
     print('list')
     print('remove')
     separate()

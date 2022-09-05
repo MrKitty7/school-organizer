@@ -1,4 +1,5 @@
 import os
+import shutil
 
 def create_class(class_name):
     # Create data folder if it doesn't already exist.
@@ -18,3 +19,16 @@ def create_class(class_name):
         print('Class already exists.')
     #------------#
     print(f'Class {class_name} has been successfully created.')
+
+def remove_class(class_name):
+    try:
+        shutil.rmtree(f'./data/{class_name}')
+        print(f'Removed Class {class_name}.')
+        
+    except:
+        if class_name == 'all':
+            for folder in os.listdir('data'):
+                shutil.rmtree(f'./data/{folder}')
+            print('All the classes have been removed.')
+        else:
+            print(f'Class {class_name} does not exist.')

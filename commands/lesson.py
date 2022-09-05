@@ -5,4 +5,5 @@ def add_lesson(class_name, subject_name, lesson):
 
     with open(file_path, 'w') as f:
         pass
-    
+
+
