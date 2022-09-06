@@ -95,3 +95,4 @@ def list_schedule(class_name, schedule_name, day):
     
     # Print all.
     print(f'\n 1. {first}\n 2. {second}\n 3. {third}\n 4. {fourth}\n 5. {fifth}\n 6. {sixth}\n 7. {seventh}\n 8. {eighth}')
+

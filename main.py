@@ -52,7 +52,7 @@ if sys.argv[1] == 'remove':
         remove_class(sys.argv[3])
     if sys.argv[2] == 'subject':
         remove_subject(sys.argv[3], sys.argv[4])
-    #if sys.argv[2] == 'lesson':
-       # remove_lesson(sys.argv[3], sys.argv[4], sys.argv[5])
+    if sys.argv[2] == 'lesson':
+        remove_lesson(sys.argv[3], sys.argv[4], sys.argv[5])
 
 #------------#
