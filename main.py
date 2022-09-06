@@ -5,6 +5,7 @@ from commands.exam import *
 from commands.lesson import *
 from commands.subject import *
 from commands.list import *
+from commands.schedule import *
 
 # Arguments
 
@@ -18,6 +19,8 @@ if sys.argv[1] == 'create':
         create_class(sys.argv[3])
     if sys.argv[2] == 'subject':
         create_subject(sys.argv[3], sys.argv[4])
+    if sys.argv[2] == 'schedule':
+        create_schedule(sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7])
 #------------#
 
 # Add Argument
@@ -39,6 +42,9 @@ if sys.argv[1] == 'list':
         list_lessons(sys.argv[3], sys.argv[4])
     if sys.argv[2] == 'exams':
         list_exams(sys.argv[3])
+    if sys.argv[2] == 'schedule':
+        list_schedule(sys.argv[3], sys.argv[4], sys.argv[5])
+#------------#
 
 # Remove Argument
 if sys.argv[1] == 'remove':
@@ -46,3 +52,7 @@ if sys.argv[1] == 'remove':
         remove_class(sys.argv[3])
     if sys.argv[2] == 'subject':
         remove_subject(sys.argv[3], sys.argv[4])
+    #if sys.argv[2] == 'lesson':
+       # remove_lesson(sys.argv[3], sys.argv[4], sys.argv[5])
+
+#------------#
