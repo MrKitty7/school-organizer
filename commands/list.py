@@ -31,3 +31,13 @@ def list_exams(class_name):
         exams.append(os.listdir(path))
         for exam in exams:
             print(str(exam))
+
+def list_homework(class_name, subject_name):
+    homework = []
+    for file in os.listdir(f'data/{class_name}/homework/{subject_name}'):
+        homework.append(file)
+    for file in homework:
+        with open (f'./data/{class_name}/homework/{subject_name}/{file}', 'r') as f:
+            lines = f.readlines()
+            print(f'{file} - Due Date: {lines[2]}')
+        print(file)

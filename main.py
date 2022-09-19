@@ -6,11 +6,12 @@ from commands.lesson import *
 from commands.subject import *
 from commands.list import *
 from commands.schedule import *
+from commands.homework import *
 
 # Arguments
 
 if sys.argv[1] == 'help':
-    help_command()
+    help()
 #------------#
 
 # Create Argument
@@ -29,6 +30,8 @@ if sys.argv[1] == 'add':
         add_lesson(sys.argv[3], sys.argv[4], sys.argv[5])
     if sys.argv[2] == 'exam':
         add_exam(sys.argv[3], sys.argv[4], sys.argv[5],  sys.argv[6])
+    if sys.argv[2] == 'homework':
+        add_homework(sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6])
 
 #------------#
 
@@ -44,6 +47,8 @@ if sys.argv[1] == 'list':
         list_exams(sys.argv[3])
     if sys.argv[2] == 'schedule':
         list_schedule(sys.argv[3], sys.argv[4], sys.argv[5])
+    if sys.argv[2] == 'homework':
+        list_homework(sys.argv[3], sys.argv[4])
 #------------#
 
 # Remove Argument
